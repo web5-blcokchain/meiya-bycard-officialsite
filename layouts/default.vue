@@ -16,10 +16,12 @@ body,
       </template>
     </LayoutHeader>
     <LayoutMain />
+    <LayoutFooter />
   </div>
 </template>
 
 <script lang="ts" setup>
+import LayoutFooter from './footer.vue'
 import LayoutHeader from './header.vue'
 import LayoutMain from './main.vue'
 </script>
