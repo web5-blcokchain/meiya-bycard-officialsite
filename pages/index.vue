@@ -6,5 +6,6 @@
     <HomeHowItWorks />
     <HomeTurnkey mt-0="!" />
     <HomeStatus mt-0="!" />
+    <HomeCustomer />
   </div>
 </template>
