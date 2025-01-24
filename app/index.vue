@@ -21,6 +21,11 @@ body,
 
 <script lang="ts" setup>
 import type { ConfigProviderProps } from 'ant-design-vue'
+import { ColorMode } from '~/enums/color-mode'
+
+const colorMode = useColorMode()
+
+colorMode.value = ColorMode.Light
 
 const theme: ConfigProviderProps['theme'] = {
   token: {
