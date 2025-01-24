@@ -9,12 +9,33 @@ body,
 
 <template>
   <div id="nuxt-app">
-    <NuxtRouteAnnouncer />
-
-    <div pa left-0 top-0 w-full>
-      <ColorMode />
-    </div>
-
-    <NuxtPage />
+    <AConfigProvider :theme>
+      <NuxtLayout>
+        <template #header>
+          <LayoutsHeader />
+        </template>
+      </NuxtLayout>
+    </AConfigProvider>
   </div>
 </template>
+
+<script lang="ts" setup>
+import type { ConfigProviderProps } from 'ant-design-vue'
+
+const theme: ConfigProviderProps['theme'] = {
+  token: {
+    colorPrimary: '#6040ec'
+  }
+}
+
+useHead({
+  title: 'ByCard',
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/favicon.svg'
+    }
+  ]
+})
+</script>
