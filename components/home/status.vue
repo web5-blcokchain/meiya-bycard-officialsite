@@ -7,7 +7,7 @@
 <template>
   <div class="status-container" py-25>
     <div mx-a max-w-5xl w-full fcc gap-10 px-4 text="white center">
-      <div flex gap-25>
+      <div flex="~ lt-md:col" gap-25>
         <div>
           <div text-15>
             1,000,000
