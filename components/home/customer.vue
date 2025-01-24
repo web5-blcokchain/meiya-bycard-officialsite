@@ -1,5 +1,5 @@
 <template>
-  <div mx-a max-w-5xl w-full fcc gap-12 px-4 pb="40 lt-md:20">
+  <div mx-a max-w-5xl w-full flex="~ lt-md:col" items-center gap-12 px-4 pb="40 lt-md:20">
     <div>
       <div text="5 #666">
         3+ Customer Reviews
@@ -11,7 +11,7 @@
         Explore what our satisfied users have to say about their experiences with it.
       </div>
     </div>
-    <div w="1/2">
+    <div w="1/2 lt-md:full">
       <div b="~ #aaa solid" rounded-5 p-8 shadow-md>
         <div>
           “ByCard has completely transformed the way we handle online transactions
