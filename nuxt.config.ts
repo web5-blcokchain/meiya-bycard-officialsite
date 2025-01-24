@@ -1,4 +1,9 @@
+import type { ComponentResolver } from 'unplugin-vue-components/types'
+import { fileURLToPath } from 'node:url'
 import lodashImports from 'lodash-imports'
+import component from 'unplugin-vue-components/vite'
+
+const r = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
 const lodash = lodashImports({ hasFrom: true })
 
@@ -7,7 +12,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/image'
   ],
 
   css: [
@@ -28,6 +34,17 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    plugins: [
+      component({
+        dts: r('./.nuxt/lib-components.d.ts'),
+        resolvers: [
+          ((name: string) => {
+            if (name.startsWith('A'))
+              return { importName: name.slice(1), path: 'ant-design-vue/es' }
+          }) as ComponentResolver
+        ]
+      })
+    ],
     css: {
       preprocessorOptions: {
         scss: {
@@ -39,7 +56,9 @@ export default defineNuxtConfig({
 
   typescript: {
     tsConfig: {
-      include: []
+      include: [
+        './lib-components.d.ts'
+      ]
     }
   },
 
