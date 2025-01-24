@@ -43,7 +43,12 @@ export default defineConfig({
   ],
   presets: [
     presetUno(),
-    presetUseful() as PresetOrFactoryAwaitable<object>,
+    presetUseful({
+      enableResetStyles: false,
+      preflights: {
+        reset: false
+      }
+    }) as PresetOrFactoryAwaitable<object>,
     presetAttributify(),
     presetIcons({
       scale: 1.2
