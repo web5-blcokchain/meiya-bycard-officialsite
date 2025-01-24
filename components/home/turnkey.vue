@@ -99,7 +99,7 @@
     </div>
 
     <div lt-md:px-5>
-      <div p="x-12.5 t-12.5" mx-a max-w-7xl w-full flex="~ lt-md:col" items-end gap-10 rounded-5 bg-white>
+      <div p="x-12.5 t-12.5" flex="~ lt-md:col" mx-a max-w-7xl w-full items-end gap-10 bg-white lt-md:rounded-5>
         <div pb-20 space-y-20>
           <div flex="~ col">
             <div text-11>
