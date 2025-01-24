@@ -7,5 +7,6 @@
     <HomeTurnkey mt-0="!" />
     <HomeStatus mt-0="!" />
     <HomeCustomer />
+    <HomeStart mt-0="!" />
   </div>
 </template>
