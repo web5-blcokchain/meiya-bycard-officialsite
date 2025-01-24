@@ -1,6 +1,8 @@
 <style lang="scss" scoped>
 .banner {
-  background: url('~/assets/images/grid.png') no-repeat 0 0 / 100% auto;
+  @media (min-width: 768px) {
+    background: url('~/assets/images/grid.png') no-repeat 0 0 / cover;
+  }
 }
 </style>
 
@@ -39,7 +41,7 @@
         </div>
       </div>
 
-      <div w="lt-md:full 75" lt-md:mt-32 class="[&>img]:(pr left-1/2 w-[80%] translate-x--1/2)">
+      <div w="lt-md:full 75" lt-md:mt-32 class="[&>img]:(pr left-1/2 w-[90%] translate-x--1/2 lt-md:w-[80%] md:w-[80%] sm:w-[70%])">
         <img src="~/assets/images/card-1.png" top--15 rotate--30>
         <img src="~/assets/images/card-2.png" top--30 rotate-30>
       </div>
