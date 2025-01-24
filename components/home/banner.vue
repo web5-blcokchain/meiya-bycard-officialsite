@@ -6,7 +6,7 @@
 
 <template>
   <div mt="40 lt-md:10" fxc class="banner">
-    <div flex="~ lt-md:col" max-w-7xl w-full gap-4>
+    <div flex="~ lt-md:col" gap="4 lt-md:18" max-w-7xl w-full px-4>
       <div flex-1 space-y-4>
         <div text="lt-md:center lt-md:8 md:9 lg:10 xl:12" font-semibold>
           Unveiling the Card Experience
