@@ -3,5 +3,6 @@
     <HomeBanner />
     <HomeAbout />
     <HomeTransactions />
+    <HomeHowItWorks />
   </div>
 </template>
