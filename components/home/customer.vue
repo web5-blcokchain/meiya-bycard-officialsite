@@ -1,5 +1,5 @@
 <template>
-  <div mx-a max-w-5xl w-full fcc gap-12 px-4>
+  <div mx-a max-w-5xl w-full fcc gap-12 px-4 pb="40 lt-md:20">
     <div>
       <div text="5 #666">
         3+ Customer Reviews
