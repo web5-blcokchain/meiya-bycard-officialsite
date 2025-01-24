@@ -1,7 +1,7 @@
 <template>
   <div h-full fbc px-2>
     <div>
-      <NuxtImg src="/logo.svg" h-12 lt-sm:h-6 />
+      <NuxtImg src="/logo.svg" h-10 lt-sm:h-6 />
     </div>
     <div fyc gap-2>
       <button bg-transparent px-1 text="3.5 primary" clickable>
