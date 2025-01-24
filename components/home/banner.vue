@@ -11,7 +11,7 @@
         <div text="lt-md:center lt-md:8 md:9 lg:10 xl:12" font-semibold>
           Unveiling the Card Experience
         </div>
-        <div text="lt-md:center 5 #666" font-light leading-relaxed>
+        <div text="5 lt-md:4 lt-md:center #666" font-light leading-relaxed>
           The payment needs of major online giants such as AliExpress, Netflix, Facebook-Google Advertising, Amazon, and various other shopping platforms.
         </div>
         <div flex lt-md:fccc lt-md:px-4>
