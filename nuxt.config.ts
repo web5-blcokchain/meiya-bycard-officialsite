@@ -12,8 +12,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/color-mode',
-    '@nuxt/image'
+    '@nuxtjs/color-mode'
   ],
 
   css: [
