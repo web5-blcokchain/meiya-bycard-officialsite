@@ -16,26 +16,6 @@
           <div>CallBack</div>
         </div>
       </AButton>
-      <ADropdown :trigger="['click']">
-        <AButton type="text" px-1>
-          <div fyc gap-1>
-            <div i-iconoir-language size-5 />
-            <div>En</div>
-            <div i-material-symbols-arrow-drop-down-rounded />
-          </div>
-        </AButton>
-
-        <template #overlay>
-          <AMenu w-28>
-            <AMenuItem key="0">
-              简体中文
-            </AMenuItem>
-            <AMenuItem key="1">
-              English
-            </AMenuItem>
-          </AMenu>
-        </template>
-      </ADropdown>
     </div>
   </div>
 </template>
