@@ -17,7 +17,7 @@
           The payment needs of major online giants such as AliExpress, Netflix, Facebook-Google Advertising, Amazon, and various other shopping platforms.
         </div>
         <div flex lt-md:fccc lt-md:px-4>
-          <AButton type="primary" h-12 lt-sm:hidden>
+          <AButton type="primary" h-12 lt-sm:hidden @click="register">
             <div fcc gap-2 text-5>
               <div>Apply Card</div>
               <div i-material-symbols-arrow-right-alt-rounded size-5 />
@@ -25,13 +25,13 @@
           </AButton>
 
           <div hidden lt-sm:block space-y-4>
-            <AButton :block="true" type="primary" h-12>
+            <AButton :block="true" type="primary" h-12 @click="register">
               <div fcc gap-2 text-5>
                 <div>Apply Card</div>
                 <div i-material-symbols-arrow-right-alt-rounded size-5 />
               </div>
             </AButton>
-            <AButton :block="true" h-12 bg-dark text-white hover="text-white!">
+            <AButton :block="true" h-12 bg-dark text-white hover="text-white!" @click="callback">
               <div fcc gap-2 text-5>
                 <div i-lineicons-telegram-original size-5 />
                 <div>CallBack</div>
@@ -48,3 +48,7 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const { register, callback } = useRedirect()
+</script>
