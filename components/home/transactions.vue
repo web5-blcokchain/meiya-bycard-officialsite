@@ -18,52 +18,68 @@
     </div>
 
     <div flex="~ lt-md:col" gap="7.5" mx-a max-w-7xl w-full items-center px-4>
-      <div p="7.5" h-85 w-70 bg-primary space-y-4>
+      <div
+        p="7.5" h-85 w-70 space-y-4 b="2 solid black" hover="b-transparent bg-primary text-white"
+        class="[&:hover>div>.hover-img]:(inline!) [&:hover>div>.default-img]:(hidden!)"
+      >
         <div>
-          <img src="~/assets/icons/credit-card.svg" size-11>
+          <img class="default-img" src="~/assets/images/credit-card.png" size-11>
+          <img class="hover-img" hidden src="~/assets/images/credit-card-active.png" size-11>
         </div>
-        <div text="6 white">
+        <div text-6>
           Virtual Credit Cards
         </div>
-        <div text-white>
+        <div>
           Say goodbye to the limitations of physical credit cards.
         </div>
       </div>
 
-      <div h-85 w-70 space-y-4 p="7.5" b="2 solid black">
+      <div
+        p="7.5" h-85 w-70 space-y-4 b="2 solid black" hover="b-transparent bg-primary text-white"
+        class="[&:hover>div>.hover-img]:(inline!) [&:hover>div>.default-img]:(hidden!)"
+      >
         <div>
-          <img src="~/assets/icons/security.svg" size-11>
+          <img class="default-img" src="~/assets/images/security.png" size-11>
+          <img class="hover-img" hidden src="~/assets/images/security-active.png" size-11>
         </div>
         <div text-6>
           Cutting-Edge Security
         </div>
-        <div text="#666">
+        <div>
           We employ state-of-the-art encryption and security protocols
           to ensure your financial data is protected at all times.
         </div>
       </div>
 
-      <div h-85 w-70 space-y-4 p="7.5" b="2 solid black">
+      <div
+        p="7.5" h-85 w-70 space-y-4 b="2 solid black" hover="b-transparent bg-primary text-white"
+        class="[&:hover>div>.hover-img]:(inline!) [&:hover>div>.default-img]:(hidden!)"
+      >
         <div>
-          <img src="~/assets/icons/coin.svg" size-11>
+          <img class="default-img" src="~/assets/images/coin.png" size-11>
+          <img class="hover-img" hidden src="~/assets/images/coin-active.png" size-11>
         </div>
         <div text-6>
           Transparent Fee Structure
         </div>
-        <div text="#666">
+        <div>
           It maintains a straightforward fee structure,
           ensuring you always know what to expect, with no surprises.
         </div>
       </div>
 
-      <div h-85 w-70 space-y-4 p="7.5" b="2 solid black">
+      <div
+        p="7.5" h-85 w-70 space-y-4 b="2 solid black" hover="b-transparent bg-primary text-white"
+        class="[&:hover>div>.hover-img]:(inline!) [&:hover>div>.default-img]:(hidden!)"
+      >
         <div>
-          <img src="~/assets/icons/security.svg" size-11>
+          <img class="default-img" src="~/assets/images/friendly.png" size-11>
+          <img class="hover-img" hidden src="~/assets/images/friendly-active.png" size-11>
         </div>
         <div text-6>
           User-Friendly Interface
         </div>
-        <div text="#666">
+        <div>
           Our platform boasts an intuitive, user-friendly interface,
           designed for both beginners and experienced users.
         </div>
