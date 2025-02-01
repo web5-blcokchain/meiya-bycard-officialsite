@@ -5,10 +5,10 @@
     </div>
     <div fyc gap-2>
       <button bg-transparent px-1 text="3.5 primary" clickable @click="login">
-        登陆
+        Login
       </button>
       <AButton type="primary" @click="register">
-        注册
+        Register
       </AButton>
       <AButton bg-dark text-white lt-sm:hidden hover="text-white!" @click="callback">
         <div fyc gap-2>
