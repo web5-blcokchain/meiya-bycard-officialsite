@@ -8,6 +8,9 @@ export default function useRedirect() {
     },
     callback() {
       window.location.href = 'https://t.me/overloader9'
+    },
+    showdoc() {
+      window.location.href = 'https://www.showdoc.com.cn/bycard'
     }
   }
 }

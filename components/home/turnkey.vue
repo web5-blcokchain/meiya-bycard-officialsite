@@ -120,11 +120,11 @@
               robust API documentation, rapid deployment, dedicated support,
               and a smooth end-to-end journey.
             </div>
-            <div>
+            <AButton type="text" size="large" mt-4 @click="showdoc">
               <div inline-block select-none clickable>
                 Get API access →
               </div>
-            </div>
+            </AButton>
           </div>
 
           <div>
@@ -145,3 +145,7 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const { showdoc } = useRedirect()
+</script>
