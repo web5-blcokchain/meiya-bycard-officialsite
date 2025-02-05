@@ -137,7 +137,7 @@
               </AFormItem>
 
               <AFormItem mt-4>
-                <AButton type="primary" size="large" block @click="router.push('/register/success')">
+                <AButton type="primary" size="large" block @click="router.push('/register/org-success')">
                   Register
                 </AButton>
               </AFormItem>
