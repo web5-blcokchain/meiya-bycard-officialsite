@@ -11,17 +11,7 @@ import {
   transformerVariantGroup
 } from 'unocss'
 
-import presetTheme from 'unocss-preset-theme'
 import { presetUseful } from 'unocss-preset-useful'
-
-const themeColors = {
-  light: {
-    primary: '#6040ec'
-  },
-  dark: {
-    primary: '#6040ec'
-  }
-}
 
 const breakpoints = {
   'xs': '320px', // Extra small devices (e.g. phones)
@@ -35,7 +25,9 @@ const breakpoints = {
 
 export default defineConfig({
   theme: {
-    colors: unoColors(themeColors.light),
+    colors: unoColors({
+      primary: '#6040ec'
+    }),
     breakpoints
   },
   shortcuts: [
@@ -53,14 +45,7 @@ export default defineConfig({
     presetIcons({
       scale: 1.2
     }),
-    presetTypography(),
-    presetTheme({
-      theme: {
-        dark: {
-          colors: unoColors(themeColors.dark)
-        }
-      }
-    }) as PresetOrFactoryAwaitable<object>
+    presetTypography()
   ],
   transformers: [
     transformerDirectives(),
