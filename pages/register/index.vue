@@ -49,7 +49,7 @@
               </div>
 
               <AFormItem mt-4>
-                <AButton type="primary" size="large" block>
+                <AButton type="primary" size="large" block @click="router.push('/register/success')">
                   Register
                 </AButton>
               </AFormItem>
