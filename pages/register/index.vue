@@ -63,7 +63,87 @@
             </div>
           </div>
         </ATabPane>
-        <ATabPane key="2" tab="Organization" />
+        <ATabPane key="2" tab="Organization">
+          <div space-y-4>
+            <div text-3 space-y-2>
+              <p>By creating a business account, you can:</p>
+              <p text="#666">
+                Access our data APIs, which include cards account info and transaction data.
+              </p>
+              <p text="#666">
+                Use sample data to try out our APIs in our sandbox environment.Hassle-free bookkeeping and expense management.Easy to get your profile on our visual portal.
+              </p>
+            </div>
+
+            <AForm>
+              <AFormItem>
+                <AInput placeholder="Email" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <FormPasswordInput v-model="password" placeholder="Password" />
+              </AFormItem>
+              <AFormItem>
+                <FormPasswordInput v-model="password" placeholder="Confirm password" />
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Phone" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Organization name" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <FormUpload>Organization logo</FormUpload>
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Business license number" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <FormUpload>Business license</FormUpload>
+              </AFormItem>
+              <AFormItem>
+                <FormUpload>Corporate legal representative</FormUpload>
+              </AFormItem>
+              <AFormItem>
+                <ASelect placeholder="Type of corporate legal person certificate" size="large">
+                  <ASelectOption value="1">
+                    Option 1
+                  </ASelectOption>
+                  <ASelectOption value="2">
+                    Option 2
+                  </ASelectOption>
+                </ASelect>
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Corporate legal person certificate number" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Contact" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <ASelect placeholder="Select Country and Region" size="large">
+                  <ASelectOption value="1">
+                    Option 1
+                  </ASelectOption>
+                  <ASelectOption value="2">
+                    Option 2
+                  </ASelectOption>
+                </ASelect>
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Contact information of institution contact person" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem>
+                <AInput placeholder="Referral code" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+
+              <AFormItem mt-4>
+                <AButton type="primary" size="large" block @click="router.push('/register/success')">
+                  Register
+                </AButton>
+              </AFormItem>
+            </AForm>
+          </div>
+        </ATabPane>
       </ATabs>
     </div>
   </div>
