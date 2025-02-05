@@ -15,13 +15,7 @@
             <AInput placeholder="Email" size="large" bg="#f3f4f6" b-none py-3 />
           </AFormItem>
           <AFormItem class="[&_.ant-input-affix-wrapper]:(b-none bg-[#f3f4f6] py-3)">
-            <AInput placeholder="Password" :type="showPassword ? 'text' : 'password'" size="large" bg="#f3f4f6">
-              <template #suffix>
-                <div clickable @click="showPassword = !showPassword">
-                  <div size-5 bg="#999" :class="showPassword ? 'i-heroicons-eye-slash' : 'i-heroicons-eye'" />
-                </div>
-              </template>
-            </AInput>
+            <UserPasswordInput v-model="password" />
           </AFormItem>
           <AFormItem>
             <AButton type="primary" size="large" block>
@@ -54,5 +48,5 @@ definePageMeta({
 
 const router = useRouter()
 
-const showPassword = ref(false)
+const password = ref('')
 </script>
