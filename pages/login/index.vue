@@ -15,7 +15,7 @@
             <AInput placeholder="Email" size="large" bg="#f3f4f6" b-none py-3 />
           </AFormItem>
           <AFormItem>
-            <UserPasswordInput v-model="password" placeholder="Password" />
+            <FormPasswordInput v-model="password" placeholder="Password" />
           </AFormItem>
           <AFormItem>
             <AButton type="primary" size="large" block>

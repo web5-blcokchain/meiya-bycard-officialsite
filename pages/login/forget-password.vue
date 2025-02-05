@@ -61,10 +61,10 @@
           <AInput placeholder="Email" size="large" disabled bg="#f3f4f6" b-none py-3 />
         </AFormItem>
         <AFormItem>
-          <UserPasswordInput v-model="form.password" placeholder="Password" />
+          <FormPasswordInput v-model="form.password" placeholder="Password" />
         </AFormItem>
         <AFormItem>
-          <UserPasswordInput v-model="confirmPassword" placeholder="Confirm password" />
+          <FormPasswordInput v-model="confirmPassword" placeholder="Confirm password" />
         </AFormItem>
         <AFormItem class="[&_.ant-input-affix-wrapper]:(b-none bg-[#f3f4f6] py-2)">
           <AInput placeholder="Code" size="large" bg="#f3f4f6">

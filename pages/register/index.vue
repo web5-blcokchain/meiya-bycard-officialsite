@@ -21,7 +21,7 @@
                 </AInput>
               </AFormItem>
               <AFormItem>
-                <UserPasswordInput v-model="password" placeholder="Password" />
+                <FormPasswordInput v-model="password" placeholder="Password" />
                 <div mt-2 fyc gap-1>
                   <div i-material-symbols-check-circle-rounded size-4 bg="#dfe1e5" />
                   <div text="3 #b3b3b3">
