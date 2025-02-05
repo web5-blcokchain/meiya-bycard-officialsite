@@ -71,7 +71,7 @@
             <template #suffix>
               <div h-8 w-18 fcc select-none bg-gray-2>
                 <div text="3 gray">
-                  验证码
+                  Captcha
                 </div>
               </div>
             </template>
