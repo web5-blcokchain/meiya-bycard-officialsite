@@ -15,11 +15,16 @@ body,
         <slot name="header" />
       </template>
     </LayoutHeader>
-    <LayoutMain flex-1 />
+    <main flex-1>
+      <div size-full of-y-auto bg="#f3f4f6">
+        <div mx-a mt-30 w-120 rounded-4 bg-white p-6>
+          <NuxtPage />
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 
 <script lang="ts" setup>
 import LayoutHeader from './header.vue'
-import LayoutMain from './main.vue'
 </script>
