@@ -16,7 +16,7 @@ body,
       </template>
     </LayoutHeader>
     <main flex-1>
-      <div size-full of-y-auto bg="#f3f4f6">
+      <div size-full of-y-auto pb-25 bg="#f3f4f6">
         <div mx-a mt-30 w-120 rounded-4 bg-white p-6>
           <NuxtPage />
         </div>
