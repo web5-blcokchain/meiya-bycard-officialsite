@@ -3,7 +3,7 @@
     <div text-6>
       Welcom to ByCard
     </div>
-    <div mt-4 text-center>
+    <div mt-4>
       <ATabs>
         <ATabPane key="1" tab="Personal" />
         <ATabPane key="2" tab="Organization" />
@@ -30,13 +30,13 @@
           </AFormItem>
         </AForm>
 
-        <div text-left>
+        <div>
           <AButton type="link" p-0 text="3.5 primary" @click="router.push('/login/forget-password')">
             Forget Password?
           </AButton>
         </div>
 
-        <div text-left space-x-2>
+        <div space-x-2>
           <span text="#999">No account?</span>
           <AButton type="link" p-0 text="3.5 primary">
             Register
