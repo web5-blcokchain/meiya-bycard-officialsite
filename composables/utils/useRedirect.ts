@@ -1,10 +1,12 @@
 export default function useRedirect() {
+  const router = useRouter()
+
   return {
     register() {
-      window.location.href = 'https://customer.bycard.io/#/register'
+      router.push('/register')
     },
     login() {
-      window.location.href = 'https://customer.bycard.io/#/login'
+      router.push('/login')
     },
     callback() {
       window.location.href = 'https://t.me/overloader9'
