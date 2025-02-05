@@ -1,6 +1,6 @@
 <template>
   <div h-full fbc px-2>
-    <div>
+    <div cursor-pointer select-none @click="router.push('/')">
       <img src="/logo.svg" h-10 lt-sm:h-6>
     </div>
     <div fyc gap-2>
@@ -22,4 +22,6 @@
 
 <script lang="ts" setup>
 const { register, login, callback } = useRedirect()
+
+const router = useRouter()
 </script>
