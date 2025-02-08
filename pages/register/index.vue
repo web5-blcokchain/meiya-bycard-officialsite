@@ -21,7 +21,7 @@
                 </AInput>
               </AFormItem>
               <AFormItem>
-                <FormPasswordInput v-model="password" placeholder="Password" />
+                <FormPasswordInput v-model="confirmPassword" placeholder="Password" />
                 <div mt-2 fyc gap-1>
                   <div i-material-symbols-check-circle-rounded size-4 bg="#dfe1e5" />
                   <div text="3 #b3b3b3">
@@ -75,65 +75,62 @@
               </p>
             </div>
 
-            <AForm>
-              <AFormItem>
-                <AInput placeholder="Email" size="large" bg="#f3f4f6" b-none py-3 />
+            <AForm :model="form">
+              <AFormItem name="mail">
+                <AInput v-model="form.mail" placeholder="Email" size="large" bg="#f3f4f6" b-none py-3 />
+              </AFormItem>
+              <AFormItem name="password">
+                <FormPasswordInput v-model="form.password" placeholder="Password" />
               </AFormItem>
               <AFormItem>
-                <FormPasswordInput v-model="password" placeholder="Password" />
+                <FormPasswordInput v-model="confirmPassword" placeholder="Confirm password" />
               </AFormItem>
-              <AFormItem>
-                <FormPasswordInput v-model="password" placeholder="Confirm password" />
+              <AFormItem name="mobile">
+                <AInput v-model="form.mobile" placeholder="Mobile" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Phone" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="cust_name">
+                <AInput v-model="form.cust_name" placeholder="Customer name" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Organization name" size="large" bg="#f3f4f6" b-none py-3 />
-              </AFormItem>
-              <AFormItem>
+              <AFormItem name="logo">
                 <FormUpload>Organization logo</FormUpload>
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Business license number" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="business_licence_no">
+                <AInput v-model="form.business_licence_no" placeholder="Business licence no" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
               <AFormItem>
                 <FormUpload>Business license</FormUpload>
               </AFormItem>
-              <AFormItem>
-                <FormUpload>Corporate legal representative</FormUpload>
+              <AFormItem name="juridical_person">
+                <AInput v-model="form.juridical_person" placeholder="Juridical person" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
               <AFormItem>
-                <ASelect placeholder="Type of corporate legal person certificate" size="large">
-                  <ASelectOption value="1">
-                    Option 1
+                <ASelect v-model="form.juridical_person_type" placeholder="Juridical person type" size="large">
+                  <ASelectOption value="10000">
+                    ID card
                   </ASelectOption>
-                  <ASelectOption value="2">
-                    Option 2
+                  <ASelectOption value="10001">
+                    Passport
                   </ASelectOption>
                 </ASelect>
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Corporate legal person certificate number" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="juridical_person_no">
+                <AInput v-model="form.juridical_person_no" placeholder="Juridical person no" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Contact" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="contacts">
+                <AInput v-model="form.contacts" placeholder="Contacts" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
               <AFormItem>
                 <ASelect placeholder="Select Country and Region" size="large">
-                  <ASelectOption value="1">
-                    Option 1
-                  </ASelectOption>
-                  <ASelectOption value="2">
-                    Option 2
+                  <ASelectOption v-for="item in countryCodes" :key="item.code" :value="item.code">
+                    {{ item.code }} {{ item.name }}
                   </ASelectOption>
                 </ASelect>
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Contact information of institution contact person" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="contact_way">
+                <AInput v-model="form.contact_way" placeholder="Contact information of institution contact person" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
-              <AFormItem>
-                <AInput placeholder="Referral code" size="large" bg="#f3f4f6" b-none py-3 />
+              <AFormItem name="invitation_code_ref">
+                <AInput v-model="form.invitation_code_ref" placeholder="Invitation code" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
 
               <AFormItem mt-4>
@@ -156,7 +153,28 @@ definePageMeta({
 
 const router = useRouter()
 
-const password = ref('')
+const countryCodes = useCountry()
+
+const form = reactive({
+  country_code: '',
+  business_licence_file: '',
+  business_licence_no: '',
+  contact_way: '',
+  contacts: '',
+  country: '',
+  cust_name: '',
+  cust_type: '',
+  juridical_person: '',
+  juridical_person_no: '',
+  logo: '',
+  mail: '',
+  mobile: '',
+  password: '',
+  juridical_person_type: '',
+  invitation_code_ref: ''
+})
+
+const confirmPassword = ref('')
 
 const agree = ref(false)
 </script>
