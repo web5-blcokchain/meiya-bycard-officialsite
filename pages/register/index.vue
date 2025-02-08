@@ -4,8 +4,8 @@
       Welcom to ByCard
     </div>
     <div mt-4>
-      <ATabs>
-        <ATabPane key="1" tab="Personal">
+      <ATabs active-key="2">
+        <ATabPane key="1" tab="Personal" disabled>
           <div>
             <AForm>
               <AFormItem>
