@@ -1,5 +1,7 @@
 const { axios } = useRequest()
 
-export function register(data: Record<string, any>) {
-  return axios.post('/customers/register', data)
+export const customersApi = {
+  register(data: Record<string, any>) {
+    return axios.post('/customers/register', data)
+  }
 }
