@@ -22,6 +22,8 @@
 </template>
 
 <script lang="ts" setup>
+import { message } from 'ant-design-vue'
+
 const props = defineProps<{
   modelValue: string
 }>()
@@ -44,7 +46,8 @@ function upload() {
   input.onchange = (e) => {
     const file = (e.target as HTMLInputElement).files?.[0]
     if (!file) {
-      throw new Error('No file selected')
+      message.error('Please select a file')
+      return
     }
 
     loading.value = true
@@ -53,10 +56,14 @@ function upload() {
       .uploadFile(file)
       .then((response) => {
         if (response.data.code !== 0) {
-          throw new Error(response.data.msg)
+          message.error(response.data.msg)
+          return
         }
 
         imageUrl.value = response.data.result
+      })
+      .then(() => {
+        message.success('Upload successfully')
       })
       .finally(() => {
         loading.value = false
