@@ -108,7 +108,7 @@
                 <AInput v-model:value="form.juridical_person" placeholder="Juridical person" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
               <AFormItem name="juridical_person_type">
-                <ASelect v-model:value="form.juridical_person_type" placeholder="Juridical person type" size="large">
+                <ASelect v-model="form.juridical_person_type" placeholder="Juridical person type" size="large" @change="selectJuridicalPersonType">
                   <ASelectOption value="10000">
                     ID card
                   </ASelectOption>
@@ -124,7 +124,7 @@
                 <AInput v-model:value="form.contacts" placeholder="Contacts" size="large" bg="#f3f4f6" b-none py-3 />
               </AFormItem>
               <AFormItem name="country_code">
-                <ASelect v-model:value="form.country_code" placeholder="Select Country and Region" size="large" @change="selectCountry">
+                <ASelect v-model="form.country_code" placeholder="Select Country and Region" size="large" @change="selectCountry">
                   <ASelectOption v-for="item in countryCodes" :key="item.code" :value="item.code">
                     {{ item.code }} {{ item.name }}
                   </ASelectOption>
@@ -217,7 +217,12 @@ const rules: Record<string, Rule[]> = {
   contact_way: [{ required: true, message: 'Please enter the contact information of the institution contact person', trigger: 'blur' }]
 }
 
+function selectJuridicalPersonType(value: string) {
+  form.juridical_person_type = value
+}
+
 function selectCountry(value: string) {
+  form.country_code = value
   const countryName = _find(countryCodes, { code: value })?.name
 
   if (!countryName) {
