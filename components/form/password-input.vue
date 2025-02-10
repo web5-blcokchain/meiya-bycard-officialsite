@@ -8,7 +8,7 @@
 
 <template>
   <div class="password-input">
-    <AInput v-model="value" v-bind="attrs" :type="showPassword ? 'text' : 'password'" size="large" bg="#f3f4f6">
+    <AInput v-model:value="value" v-bind="attrs" :type="showPassword ? 'text' : 'password'" size="large" bg="#f3f4f6">
       <template #suffix>
         <div clickable @click="showPassword = !showPassword">
           <div size-5 bg="#999" :class="showPassword ? 'i-heroicons-eye-slash' : 'i-heroicons-eye'" />
