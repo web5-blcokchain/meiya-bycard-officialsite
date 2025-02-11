@@ -55,14 +55,7 @@ function upload() {
     commonApi
       .uploadFile(file)
       .then((response) => {
-        if (response.data.code !== 0) {
-          message.error(response.data.msg)
-          return
-        }
-
         imageUrl.value = response.data.result
-      })
-      .then(() => {
         message.success('Upload successfully')
       })
       .finally(() => {

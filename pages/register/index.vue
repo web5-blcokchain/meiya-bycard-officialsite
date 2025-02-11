@@ -240,12 +240,7 @@ async function organizationRegister() {
 
   customersApi
     .register(form)
-    .then((response) => {
-      if (response.data.code !== 0) {
-        message.error(response.data.msg)
-        return
-      }
-
+    .then(() => {
       router.push('/register/org-success')
     })
     .finally(() => {
