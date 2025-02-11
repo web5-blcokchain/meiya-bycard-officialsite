@@ -24,12 +24,6 @@
           </AFormItem>
         </AForm>
 
-        <div>
-          <AButton type="link" p-0 text="3.5 primary" @click="router.push('/login/forget-password')">
-            Forget Password?
-          </AButton>
-        </div>
-
         <div space-x-2 text="3.5">
           <span text="#999">No account?</span>
           <AButton type="link" p-0 text="primary" @click="router.push('/register')">
