@@ -1,8 +1,10 @@
 import { message } from 'ant-design-vue'
 import axios from 'axios'
 
+const runtimeConfig = useRuntimeConfig()
+
 const instance = axios.create({
-  baseURL: 'https://customer.bycard.io/v1'
+  baseURL: runtimeConfig.public.apiBase
 })
 
 instance.interceptors.response.use(

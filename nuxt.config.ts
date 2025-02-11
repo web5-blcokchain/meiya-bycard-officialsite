@@ -1,4 +1,5 @@
 import type { ComponentResolver } from 'unplugin-vue-components/types'
+import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import lodashImports from 'lodash-imports'
 import component from 'unplugin-vue-components/vite'
@@ -58,6 +59,12 @@ export default defineNuxtConfig({
       include: [
         './lib-components.d.ts'
       ]
+    }
+  },
+
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.API_BASE
     }
   },
 

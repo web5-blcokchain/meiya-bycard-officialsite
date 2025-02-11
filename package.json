@@ -7,8 +7,8 @@
   "scripts": {
     "prepare": "simple-git-hooks && nuxt prepare",
     "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "dev": "nuxt dev --dotenv .env.development",
+    "generate": "nuxt generate --dotenv .env.production",
     "preview": "nuxt preview",
     "release": "bumpp",
     "lint": "eslint --cache"
