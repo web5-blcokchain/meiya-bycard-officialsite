@@ -1,12 +1,12 @@
 export default function useRedirect() {
-  const router = useRouter()
-
   return {
     register() {
-      router.push('/register')
+      // TODO: 跳转到注册页面
+      // window.location.href = ''
     },
     login() {
-      router.push('/login')
+      // TODO: 跳转到登录页面
+      // window.location.href = ''
     },
     callback() {
       window.location.href = 'https://t.me/overloader9'
