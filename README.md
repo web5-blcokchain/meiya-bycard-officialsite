@@ -1,3 +1,3 @@
-# frontend-nuxt-starter
+# 仓库已迁移
 
-Nuxt 起步模板
+使用该仓库：[https://github.com/beyounger-pay/beyounger-card-customer](https://github.com/beyounger-pay/beyounger-card-customer)
