@@ -2,10 +2,10 @@
   <div flex="~ col" gap-10 pb-25>
     <div mx-a max-w-5xl w-full fccc gap-10 px-4>
       <div text="#666 center">
-        How It Works
+        {{ $t('howItWorks.title') }}
       </div>
       <div text="11 lt-md:6 center" font-semibold>
-        Flow Our Step For Create Your Account
+        {{ $t('howItWorks.flow') }}
       </div>
     </div>
 
@@ -13,16 +13,15 @@
       <div b="~ solid #9a9a9a" from="#fafafa" pr h-145 w-90 of-hidden rounded-5 to-white bg-gradient-to-b>
         <div p-4 space-y-3>
           <div text="7.5" font-semibold>
-            Step 1
+            {{ $t('howItWorks.step1.title') }}
           </div>
 
           <div text="7.5 center" font-semibold>
-            Sign Up
+            {{ $t('howItWorks.step1.subtitle') }}
           </div>
 
           <div text="#666 center">
-            Begin by signing up on the ByCard platform.
-            Provide the required information to create your account.
+            {{ $t('howItWorks.step1.description') }}
           </div>
         </div>
 
@@ -34,16 +33,15 @@
       <div b="~ solid #9a9a9a" from="#fafafa" pr h-145 w-90 of-hidden rounded-5 to-white bg-gradient-to-b>
         <div p-4 space-y-3>
           <div text="7.5" font-semibold>
-            Step 2
+            {{ $t('howItWorks.step2.title') }}
           </div>
 
           <div text="7.5 center" font-semibold>
-            Loading Funds
+            {{ $t('howItWorks.step2.subtitle') }}
           </div>
 
           <div text="#666 center">
-            This can be done through various payment methods,
-            ensuring flexibility and convenience.
+            {{ $t('howItWorks.step2.description') }}
           </div>
         </div>
 
@@ -55,16 +53,15 @@
       <div b="~ solid #9a9a9a" from="#fafafa" pr h-145 w-90 of-hidden rounded-5 to-white bg-gradient-to-b>
         <div p-4 space-y-3>
           <div text="7.5" font-semibold>
-            Step 3
+            {{ $t('howItWorks.step3.title') }}
           </div>
 
           <div text="7.5 center" font-semibold>
-            Apply Card
+            {{ $t('howItWorks.step3.subtitle') }}
           </div>
 
           <div text="#666 center">
-            It mirrors your traditional credit card,
-            allowing you to conduct online transactions securely.
+            {{ $t('howItWorks.step3.description') }}
           </div>
         </div>
 

@@ -3,5 +3,130 @@
     "login": "Login",
     "register": "Register",
     "callback": "CallBack"
+  },
+  "hero": {
+    "title": "Unveiling the Card Experience",
+    "paymentNeeds": "The payment needs of major online giants such as AliExpress, Netflix, Facebook-Google Advertising, Amazon, and various other shopping platforms.",
+    "applyCard": "Apply Card"
+  },
+  "about": {
+    "title": "Empowering the Future of Online Transactions",
+    "mission": "We are at the forefront of revolutionizing the way people navigate the digital financial landscape. Our mission is clear: to provide users and entrepreneurs with a secure, efficient, and user-friendly platform for conducting online transactions through virtual credit cards.",
+    "vision": "Our Vision",
+    "difference": "The ByCard Difference",
+    "commitment": "Our Commitment",
+    "joinUs": "Join Us on this Journey"
+  },
+  "features": {
+    "title": "Redefining Online Transactions",
+    "description": "Discover the unparalleled features that make ByCard the go-to platform for secure, convenient, and efficient online transactions. With our virtual credit cards, you can seamlessly shop, subscribe, and transact online, all with just a few clicks.",
+    "virtualCards": {
+      "title": "Virtual Credit Cards",
+      "description": "Say goodbye to the limitations of physical credit cards."
+    },
+    "security": {
+      "title": "Cutting-Edge Security",
+      "description": "We employ state-of-the-art encryption and security protocols to ensure your financial data is protected at all times."
+    },
+    "fees": {
+      "title": "Transparent Fee Structure",
+      "description": "It maintains a straightforward fee structure, ensuring you always know what to expect, with no surprises."
+    },
+    "interface": {
+      "title": "User-Friendly Interface",
+      "description": "Our platform boasts an intuitive, user-friendly interface, designed for both beginners and experienced users."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "flow": "Flow Our Step For Create Your Account",
+    "step1": {
+      "title": "Step 1",
+      "subtitle": "Sign Up",
+      "description": "Begin by signing up on the ByCard platform. Provide the required information to create your account."
+    },
+    "step2": {
+      "title": "Step 2",
+      "subtitle": "Loading Funds",
+      "description": "This can be done through various payment methods, ensuring flexibility and convenience."
+    },
+    "step3": {
+      "title": "Step 3",
+      "subtitle": "Apply Card",
+      "description": "It mirrors your traditional credit card, allowing you to conduct online transactions securely."
+    }
+  },
+  "solutions": {
+    "turnkey": {
+      "title": "Turnkey solution",
+      "description": "Launching your card program made easy"
+    },
+    "borderless": {
+      "title": "Go Borderless",
+      "description": "MasterCard, Visa, Unionpay - cards work worldwide without exceptions and sanctions"
+    },
+    "kyc": {
+      "title": "KYC, no KYC",
+      "description": "Different use cases"
+    },
+    "contactless": {
+      "title": "Contactless payments",
+      "description": "Apple Pay and Google Pay puts mobile payments at their fingertips"
+    },
+    "noFees": {
+      "title": "With no hidden fees",
+      "description": "Deposit fee: starting at 1%"
+    },
+    "flexible": {
+      "title": "Flexible card issuance",
+      "description": "Virtual and physical cards"
+    },
+    "integration": {
+      "title": "Effortless integration",
+      "description": "Developer-friendly API and dedicated support"
+    }
+  },
+  "benefits": {
+    "swift": "Swift",
+    "toMarket": {
+      "title": "Get to market faster",
+      "description": "Launch your card program in weeks",
+      "details": "Accelerate time-to-market with secure sandbox testing, robust API documentation, rapid deployment, dedicated support, and a smooth end-to-end journey."
+    },
+    "instantCards": {
+      "title": "Instant card issuance",
+      "description": "Instantly issue virtual or physical cards with our mobile app. Try it now!"
+    },
+    "getApi": "Get API access"
+  },
+  "stats": {
+    "users": "Registered Users",
+    "transactions": "Transaction Tumover",
+    "team": "Team Members"
+  },
+  "testimonials": {
+    "title": "3+ Customer Reviews",
+    "subtitle": "Empowering the Future of Online Transactions",
+    "description": "Explore what our satisfied users have to say about their experiences with it.",
+    "businessOwner": {
+      "title": "Small Business Owner",
+      "review": "As a small business owner, ByCard has been a game-changer. It allows me to offer convenient payment options to my clients while generating an extra revenue stream. The one-time-use codes provide peace of mind, knowing that my transactions are secure. ByCard is a win-win for both my clients and my business."
+    },
+    "marketingManager": {
+      "title": "Marketing Manager",
+      "review": "ByCard has completely transformed the way we handle online transactions in our company. The security features are top-notch, and the ease of generating virtual cards makes our online purchases hassle-free. I highly recommend ByCard to anyone looking for a secure and convenient online payment solution."
+    },
+    "shopper": {
+      "title": "Online Shopper",
+      "review": "Shopping online has never been this secure and straightforward. ByCard's unique codes make me feel confident about the safety of my transactions. It's like having an extra layer of protection. I can't imagine going back to using my regular card for online purchases. ByCard has won me over!"
+    }
+  },
+  "cta": {
+    "title": "Ready To Join ByCard?",
+    "button": "Start Now"
+  },
+  "footer": {
+    "thanks": "Thank you for choosing ByCard as your trusted partner for secure online transactions. We are committed to providing you with a seamless and secure experience.",
+    "copyright": "Copyright © 2024 , All Rights Reserved. ByCard"
   }
 }

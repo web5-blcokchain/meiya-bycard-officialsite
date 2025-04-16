@@ -3,10 +3,10 @@
     <div mx-a max-w-5xl w-full fcc gap-10 px-4>
       <div space-y-4>
         <div text="11 lt-md:6 center" font-semibold>
-          Turnkey solution
+          {{ $t('solutions.turnkey.title') }}
         </div>
         <div text="5 lt-md:4 center #666">
-          Launching your card program made easy
+          {{ $t('solutions.turnkey.description') }}
         </div>
       </div>
     </div>
@@ -18,11 +18,10 @@
         </div>
         <div>
           <div text="7.5">
-            Go Borderless
+            {{ $t('solutions.borderless.title') }}
           </div>
           <div text="5 #666">
-            MasterCard, Visa, Unionpay - cards work
-            worldwide without exceptions and sanctions
+            {{ $t('solutions.borderless.description') }}
           </div>
         </div>
       </div>
@@ -33,10 +32,10 @@
         </div>
         <div>
           <div text="7.5">
-            KYC, no KYC
+            {{ $t('solutions.kyc.title') }}
           </div>
           <div text="5 #666">
-            Different use cases
+            {{ $t('solutions.kyc.description') }}
           </div>
         </div>
       </div>
@@ -47,10 +46,10 @@
         </div>
         <div>
           <div text="7.5">
-            Contactless payments
+            {{ $t('solutions.contactless.title') }}
           </div>
           <div text="5 #666">
-            Apple Pay and Google Pay puts mobile payments at their fingertips
+            {{ $t('solutions.contactless.description') }}
           </div>
         </div>
       </div>
@@ -61,10 +60,10 @@
         </div>
         <div>
           <div text="7.5">
-            With no hidden fees
+            {{ $t('solutions.noFees.title') }}
           </div>
           <div text="5 #666">
-            Deposit fee: starting at 1%
+            {{ $t('solutions.noFees.description') }}
           </div>
         </div>
       </div>
@@ -75,10 +74,10 @@
         </div>
         <div>
           <div text="7.5">
-            Flexible card issuance
+            {{ $t('solutions.flexible.title') }}
           </div>
           <div text="5 #666">
-            Virtual and physical cards
+            {{ $t('solutions.flexible.description') }}
           </div>
         </div>
       </div>
@@ -89,10 +88,10 @@
         </div>
         <div>
           <div text="7.5">
-            Effortless integration
+            {{ $t('solutions.integration.title') }}
           </div>
           <div text="5 #666">
-            Developer-friendly API and dedicated support
+            {{ $t('solutions.integration.description') }}
           </div>
         </div>
       </div>
@@ -103,37 +102,34 @@
         <div pb-20 space-y-20>
           <div flex="~ col">
             <div text-11>
-              Swift
+              {{ $t('benefits.swift') }}
             </div>
 
             <div text="5 #666">
-              Get to market faster
+              {{ $t('benefits.toMarket.title') }}
             </div>
           </div>
 
           <div>
             <div text="7.5">
-              Launch your card program in weeks
+              {{ $t('benefits.toMarket.description') }}
             </div>
             <div text="5 #666">
-              Accelerate time-to-market with secure sandbox testing,
-              robust API documentation, rapid deployment, dedicated support,
-              and a smooth end-to-end journey.
+              {{ $t('benefits.toMarket.details') }}
             </div>
             <AButton type="text" size="large" mt-4 @click="showdoc">
               <div inline-block select-none clickable>
-                Get API access →
+                {{ $t('benefits.getApi') }} →
               </div>
             </AButton>
           </div>
 
           <div>
             <div text="7.5">
-              Instant card issuance
+              {{ $t('benefits.instantCards.title') }}
             </div>
             <div text="5 #666">
-              Instantly issue virtual or physical cards with our mobile app.
-              Try it now!
+              {{ $t('benefits.instantCards.description') }}
             </div>
           </div>
         </div>

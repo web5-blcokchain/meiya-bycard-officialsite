@@ -13,7 +13,7 @@
             1,000,000
           </div>
           <div text-8>
-            Registered Users
+            {{ $t('stats.users') }}
           </div>
         </div>
 
@@ -22,7 +22,7 @@
             1B+
           </div>
           <div text-8>
-            Transaction Tumover
+            {{ $t('stats.transactions') }}
           </div>
         </div>
 
@@ -31,7 +31,7 @@
             160+
           </div>
           <div text-8>
-            Team Members
+            {{ $t('stats.team') }}
           </div>
         </div>
       </div>

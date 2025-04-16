@@ -5,34 +5,34 @@
     </div>
     <div space-y-4>
       <div text="11 lt-md:6 lt-md:center" font-semibold>
-        Empowering the Future of Online Transactions
+        {{ $t('about.title') }}
       </div>
       <div text="5 lt-md:4 lt-md:center #666">
-        we are at the forefront of revolutionizing the way people navigate the digital financial landscape. Our mission is clear: to provide users and entrepreneurs with a secure, efficient, and user-friendly platform for conducting online transactions through virtual credit cards.
+        {{ $t('about.mission') }}
       </div>
       <div grid="~ cols-2" gap-2>
         <div fyc gap-2>
           <div i-material-symbols-light-check-circle-outline-rounded size="6.5" />
           <div text="3.5">
-            Our Vision
+            {{ $t('about.vision') }}
           </div>
         </div>
         <div fyc gap-2>
           <div i-material-symbols-light-check-circle-outline-rounded size="6.5" />
           <div text="3.5">
-            The ByCard Difference
+            {{ $t('about.difference') }}
           </div>
         </div>
         <div fyc gap-2>
           <div i-material-symbols-light-check-circle-outline-rounded size="6.5" />
           <div text="3.5">
-            Our Commitment
+            {{ $t('about.commitment') }}
           </div>
         </div>
         <div fyc gap-2>
           <div i-material-symbols-light-check-circle-outline-rounded size="6.5" />
           <div text="3.5">
-            Join Us on this Journey
+            {{ $t('about.joinUs') }}
           </div>
         </div>
       </div>

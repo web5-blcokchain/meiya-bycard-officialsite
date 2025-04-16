@@ -3,13 +3,10 @@
     <div flex="~ lt-md:col-reverse" mx-a max-w-5xl w-full gap-10 px-4>
       <div space-y-4>
         <div text="11 lt-md:6 center" font-semibold>
-          Redefining Online Transactions
+          {{ $t('features.title') }}
         </div>
         <div text="5 lt-md:4 center #666">
-          Discover the unparalleled features that make ByCard the go-to platform for secure,
-          convenient, and efficient online transactions. With our virtual credit cards,
-          you can seamlessly shop, subscribe, and transact online,
-          all with just a few clicks.
+          {{ $t('features.description') }}
         </div>
       </div>
       <div hidden lt-md:block text="#666 center">
@@ -27,10 +24,10 @@
           <img class="hover-img" hidden src="~/assets/images/credit-card-active.png" size-11>
         </div>
         <div text-6>
-          Virtual Credit Cards
+          {{ $t('features.virtualCards.title') }}
         </div>
         <div>
-          Say goodbye to the limitations of physical credit cards.
+          {{ $t('features.virtualCards.description') }}
         </div>
       </div>
 
@@ -43,11 +40,10 @@
           <img class="hover-img" hidden src="~/assets/images/security-active.png" size-11>
         </div>
         <div text-6>
-          Cutting-Edge Security
+          {{ $t('features.security.title') }}
         </div>
         <div>
-          We employ state-of-the-art encryption and security protocols
-          to ensure your financial data is protected at all times.
+          {{ $t('features.security.description') }}
         </div>
       </div>
 
@@ -60,11 +56,10 @@
           <img class="hover-img" hidden src="~/assets/images/coin-active.png" size-11>
         </div>
         <div text-6>
-          Transparent Fee Structure
+          {{ $t('features.fees.title') }}
         </div>
         <div>
-          It maintains a straightforward fee structure,
-          ensuring you always know what to expect, with no surprises.
+          {{ $t('features.fees.description') }}
         </div>
       </div>
 
@@ -77,11 +72,10 @@
           <img class="hover-img" hidden src="~/assets/images/friendly-active.png" size-11>
         </div>
         <div text-6>
-          User-Friendly Interface
+          {{ $t('features.interface.title') }}
         </div>
         <div>
-          Our platform boasts an intuitive, user-friendly interface,
-          designed for both beginners and experienced users.
+          {{ $t('features.interface.description') }}
         </div>
       </div>
     </div>

@@ -1,7 +1,132 @@
 {
   "header": {
-    "login": "Iniciar sesión",
-    "register": "Registrarse",
-    "callback": "Llamada"
+    "login": "Acceso",
+    "register": "Registro",
+    "callback": "Llamar de vuelta"
+  },
+  "hero": {
+    "title": "Descubriendo la experiencia de la tarjeta",
+    "paymentNeeds": "Las necesidades de pago de los principales gigantes en línea como AliExpress, Netflix, Facebook-Google Advertising, Amazon y varias otras plataformas de compras.",
+    "applyCard": "Solicitar tarjeta"
+  },
+  "about": {
+    "title": "Potenciando el futuro de las transacciones en línea",
+    "mission": "Estamos a la vanguardia de la revolución en la forma en que las personas navegan por el panorama financiero digital. Nuestra misión es clara: brindar a usuarios y emprendedores una plataforma segura, eficiente y fácil de usar para realizar transacciones en línea mediante tarjetas de crédito virtuales.",
+    "vision": "Nuestra visión",
+    "difference": "La diferencia de ByCard",
+    "commitment": "Nuestro compromiso",
+    "joinUs": "Únete a nosotros en este viaje"
+  },
+  "features": {
+    "title": "Redefiniendo las transacciones en línea",
+    "description": "Descubra las características inigualables que hacen de ByCard la plataforma ideal para transacciones en línea seguras, convenientes y eficientes. Con nuestras tarjetas de crédito virtuales, puede comprar, suscribirse y realizar transacciones en línea fácilmente, todo con solo unos clics.",
+    "virtualCards": {
+      "title": "Tarjetas de crédito virtuales",
+      "description": "Dígale adiós a las limitaciones de las tarjetas de crédito físicas."
+    },
+    "security": {
+      "title": "Seguridad de vanguardia",
+      "description": "Empleamos protocolos de seguridad y encriptación de última generación para garantizar que sus datos financieros estén protegidos en todo momento."
+    },
+    "fees": {
+      "title": "Estructura de tarifas transparente",
+      "description": "Mantiene una estructura de tarifas sencilla, lo que garantiza que siempre sabrá qué esperar, sin sorpresas."
+    },
+    "interface": {
+      "title": "Interfaz fácil de usar",
+      "description": "Nuestra plataforma cuenta con una interfaz intuitiva y fácil de usar, diseñada tanto para principiantes como para usuarios experimentados."
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "flow": "Flujo Nuestro Paso Para Crear Tu Cuenta",
+    "step1": {
+      "title": "Paso 1",
+      "subtitle": "Inscribirse",
+      "description": "Comience registrándose en la plataforma ByCard. Proporcione la información necesaria para crear su cuenta."
+    },
+    "step2": {
+      "title": "Paso 2",
+      "subtitle": "Carga de fondos",
+      "description": "Esto se puede realizar a través de varios métodos de pago, garantizando flexibilidad y comodidad."
+    },
+    "step3": {
+      "title": "Paso 3",
+      "subtitle": "Solicitar tarjeta",
+      "description": "Refleja su tarjeta de crédito tradicional, permitiéndole realizar transacciones en línea de forma segura."
+    }
+  },
+  "solutions": {
+    "turnkey": {
+      "title": "Solución llave en mano",
+      "description": "Poner en marcha tu programa de tarjetas es muy fácil"
+    },
+    "borderless": {
+      "title": "Go Borderless",
+      "description": "MasterCard, Visa, Unionpay - las tarjetas funcionan en todo el mundo sin excepciones ni sanciones."
+    },
+    "kyc": {
+      "title": "KYC, sin KYC",
+      "description": "Diferentes casos de uso"
+    },
+    "contactless": {
+      "title": "Pagos sin contacto",
+      "description": "Apple Pay y Google Pay ponen los pagos móviles a su alcance"
+    },
+    "noFees": {
+      "title": "Sin cargos ocultos",
+      "description": "Tarifa de depósito: a partir del 1%"
+    },
+    "flexible": {
+      "title": "Emisión flexible de tarjetas",
+      "description": "Tarjetas virtuales y físicas"
+    },
+    "integration": {
+      "title": "Integración sin esfuerzo",
+      "description": "API fácil de usar para desarrolladores y soporte dedicado"
+    }
+  },
+  "benefits": {
+    "swift": "Swift",
+    "toMarket": {
+      "title": "Llegar al mercado más rápido",
+      "description": "Lanza tu programa de tarjetas en semanas",
+      "details": "Acelere el tiempo de comercialización con pruebas de entorno sandbox seguras, documentación de API sólida, implementación rápida, soporte dedicado y una experiencia fluida de principio a fin."
+    },
+    "instantCards": {
+      "title": "Emisión instantánea de tarjetas",
+      "description": "Emite tarjetas virtuales o físicas al instante con nuestra app móvil. ¡Pruébala ya!"
+    },
+    "getApi": "Obtener acceso a la API"
+  },
+  "stats": {
+    "users": "Usuarios registrados",
+    "transactions": "Volumen de transacciones",
+    "team": "Miembros del equipo"
+  },
+  "testimonials": {
+    "title": "3+ opiniones de clientes",
+    "subtitle": "Potenciando el futuro de las transacciones en línea",
+    "description": "Descubra lo que nuestros usuarios satisfechos tienen que decir sobre sus experiencias con él.",
+    "businessOwner": {
+      "title": "Propietario de una pequeña empresa",
+      "review": "Como propietario de una pequeña empresa, ByCard ha sido una revolución. Me permite ofrecer opciones de pago convenientes a mis clientes y, al mismo tiempo, generar ingresos adicionales. Los códigos de un solo uso me brindan tranquilidad, ya que sé que mis transacciones son seguras. ByCard es una solución beneficiosa tanto para mis clientes como para mi negocio."
+    },
+    "marketingManager": {
+      "title": "Gerente de Marketing",
+      "review": "ByCard ha transformado por completo la forma en que gestionamos las transacciones en línea en nuestra empresa. Las funciones de seguridad son de primera categoría y la facilidad para generar tarjetas virtuales facilita nuestras compras en línea. Recomiendo ByCard a cualquiera que busque una solución de pago en línea segura y práctica."
+    },
+    "shopper": {
+      "title": "Comprador en línea",
+      "review": "Comprar en línea nunca ha sido tan seguro y sencillo. Los códigos únicos de ByCard me dan confianza en la seguridad de mis transacciones. Es como tener una capa extra de protección. No me imagino volviendo a usar mi tarjeta habitual para comprar en línea. ¡ByCard me ha convencido!"
+    }
+  },
+  "cta": {
+    "title": "¿Estás listo para unirte a ByCard?",
+    "button": "Empieza ahora!"
+  },
+  "footer": {
+    "thanks": "Gracias por elegir ByCard como su socio de confianza para transacciones seguras en línea. Nos comprometemos a brindarle una experiencia fluida y segura.",
+    "copyright": "Copyright © 2024, Todos los derechos reservados. ByCard"
   }
 }

@@ -11,15 +11,15 @@
     <div flex="~ lt-md:col" gap="4 lt-md:18" max-w-7xl w-full px-4>
       <div flex-1 space-y-4>
         <div text="lt-md:center lt-md:8 md:9 lg:10 xl:12" font-semibold>
-          Unveiling the Card Experience
+          {{ $t('hero.title') }}
         </div>
         <div text="5 lt-md:4 lt-md:center #666" font-light leading-relaxed>
-          The payment needs of major online giants such as AliExpress, Netflix, Facebook-Google Advertising, Amazon, and various other shopping platforms.
+          {{ $t('hero.paymentNeeds') }}
         </div>
         <div flex lt-md:fccc lt-md:px-4>
           <AButton type="primary" h-12 lt-sm:hidden @click="register">
             <div fcc gap-2 text-5>
-              <div>Apply Card</div>
+              <div>{{ $t('hero.applyCard') }}</div>
               <div i-material-symbols-arrow-right-alt-rounded size-5 />
             </div>
           </AButton>
@@ -27,14 +27,14 @@
           <div hidden lt-sm:block space-y-4>
             <AButton :block="true" type="primary" h-12 @click="register">
               <div fcc gap-2 text-5>
-                <div>Apply Card</div>
+                <div>{{ $t('hero.applyCard') }}</div>
                 <div i-material-symbols-arrow-right-alt-rounded size-5 />
               </div>
             </AButton>
             <AButton :block="true" h-12 bg-dark text-white hover="text-white!" @click="callback">
               <div fcc gap-2 text-5>
                 <div i-lineicons-telegram-original size-5 />
-                <div>CallBack</div>
+                <div>{{ $t('header.callback') }}</div>
               </div>
             </AButton>
           </div>

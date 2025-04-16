@@ -18,13 +18,13 @@
   <div mx-a max-w-5xl w-full flex="~ lt-md:col" items-center gap-12 px-4 pb="40 lt-md:20">
     <div>
       <div text="5 #666">
-        3+ Customer Reviews
+        {{ $t('testimonials.title') }}
       </div>
       <div text-11>
-        Empowering the Future of Online Transactions
+        {{ $t('testimonials.subtitle') }}
       </div>
       <div text-5>
-        Explore what our satisfied users have to say about their experiences with it.
+        {{ $t('testimonials.description') }}
       </div>
     </div>
     <div w="1/2 lt-md:full" class="swiper-container">
@@ -45,7 +45,7 @@
         <SwiperSlide v-for="customer in customers" :key="customer.name" p="x-4 b-8">
           <div b="~ #aaa solid" rounded-5 p-8 shadow-md>
             <div>
-              “{{ customer.review }}”
+              "{{ customer.review }}"
             </div>
 
             <div bg="#d2d2d2" my-8 h-1px w-full />
@@ -77,24 +77,27 @@ import CustomerAvatar3 from '~/assets/images/customer-avatar-3.png'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-const customers = [
+const { t } = useI18n()
+
+// 使用计算属性，确保语言切换时重新计算 customers 内容
+const customers = computed(() => [
   {
     name: 'Sarah Williams',
-    title: 'Marketing Manager',
+    title: t('testimonials.marketingManager.title'),
     avatar: CustomerAvatar1,
-    review: 'ByCard has completely transformed the way we handle online transactions in our company. The security features are top-notch, and the ease of generating virtual cards makes our online purchases hassle-free. I highly recommend ByCard to anyone looking for a secure and convenient online payment solution.'
+    review: t('testimonials.marketingManager.review')
   },
   {
     name: 'John Smith',
-    title: 'Small Business Owner',
+    title: t('testimonials.businessOwner.title'),
     avatar: CustomerAvatar2,
-    review: 'As a small business owner, ByCard has been a game-changer. It allows me to offer convenient payment options to my clients while generating an extra revenue stream. The one-time-use codes provide peace of mind, knowing that my transactions are secure. ByCard is a win-win for both my clients and my business.'
+    review: t('testimonials.businessOwner.review')
   },
   {
     name: 'Lisa Rodriguez',
-    title: 'Online Shopper',
+    title: t('testimonials.shopper.title'),
     avatar: CustomerAvatar3,
-    review: 'Shopping online has never been this secure and straightforward. ByCard’s unique codes make me feel confident about the safety of my transactions. It’s like having an extra layer of protection. I can’t imagine going back to using my regular card for online purchases. ByCard has won me over!'
+    review: t('testimonials.shopper.review')
   }
-]
+])
 </script>

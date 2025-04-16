@@ -6,12 +6,11 @@
           <img src="/logo.svg" h-10>
         </div>
         <div w-120 lt-md:w-full text="#666">
-          Thank you for choosing ByCard as your trusted partner for secure online transactions.
-          We are committed to providing you with a seamless and secure experience.
+          {{ $t('footer.thanks') }}
         </div>
       </div>
       <div text="#666">
-        Copyright © 2024 , All Rights Reserved. ByCard
+        {{ $t('footer.copyright') }}
       </div>
     </div>
   </footer>
